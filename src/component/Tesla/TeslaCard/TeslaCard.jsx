@@ -18,7 +18,7 @@ const TeslaCard = ({ data, HandleDelete }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Add to Card!", "Your file has been deleted.", "success");
-        fetch("http://localhost:5000/AddToCard", {
+        fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/AddToCard", {
           method: "POST",
           headers: {
             "content-type": "application/json",

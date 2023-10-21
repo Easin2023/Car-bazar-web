@@ -20,7 +20,7 @@ const Bmw = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        fetch(`http://localhost:5000/BMW/${id}`, {
+        fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/BMW/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

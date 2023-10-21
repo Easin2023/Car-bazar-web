@@ -7,7 +7,7 @@ const FerrariDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("http://localhost:5000/Ferrari")
+    fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Ferrari")
       .then((res) => res.json())
       .then((data) => {
           setFerrari(data)

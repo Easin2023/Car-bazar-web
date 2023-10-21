@@ -7,7 +7,7 @@ const Rolls_RoyceCardDetails = () => {
      const { id } = useParams();
    
      useEffect(() => {
-       fetch("http://localhost:5000/Rolls_Royce")
+       fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Rolls_Royce")
          .then((res) => res.json())
          .then((data) => {
              setLamborghini(data)

@@ -20,7 +20,7 @@ const Toyota = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        fetch(`http://localhost:5000/Toyota/${id}`, {
+        fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Toyota/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

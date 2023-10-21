@@ -7,7 +7,7 @@ const LamborghiniCardDetails = () => {
      const { id } = useParams();
    
      useEffect(() => {
-       fetch("http://localhost:5000/Lamborghini")
+       fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Lamborghini")
          .then((res) => res.json())
          .then((data) => {
              setLamborghini(data)

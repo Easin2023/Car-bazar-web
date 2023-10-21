@@ -7,7 +7,7 @@ const ToyotaCardDetails = () => {
      const { id } = useParams();
    
      useEffect(() => {
-       fetch("http://localhost:5000/Toyota")
+       fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Toyota")
          .then((res) => res.json())
          .then((data) => {
              setLamborghini(data)
