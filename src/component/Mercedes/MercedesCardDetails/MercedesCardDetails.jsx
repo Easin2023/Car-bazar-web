@@ -7,7 +7,7 @@ const MercedesCardDetails = () => {
      const { id } = useParams();
    
      useEffect(() => {
-       fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Mercedes")
+       fetch("https://carbazar-server-site.vercel.app/Mercedes")
          .then((res) => res.json())
          .then((data) => {
              setLamborghini(data)

@@ -7,7 +7,7 @@ const FerrariDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Ferrari")
+    fetch("https://carbazar-server-site.vercel.app/Ferrari")
       .then((res) => res.json())
       .then((data) => {
           setFerrari(data)

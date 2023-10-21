@@ -20,7 +20,7 @@ const Tesla = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Tesla/${id}`, {
+        fetch(`https://carbazar-server-site.vercel.app/Tesla/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

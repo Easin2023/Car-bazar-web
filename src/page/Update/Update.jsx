@@ -43,7 +43,7 @@ const Update = () => {
       Short_description,
       selected,
     };
-    fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${selected}/${_id}`, {
+    fetch(`https://carbazar-server-site.vercel.app/${selected}/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

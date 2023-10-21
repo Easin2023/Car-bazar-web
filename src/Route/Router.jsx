@@ -50,7 +50,7 @@ const Router = createBrowserRouter([
             <MyCard></MyCard>
           </Private>
         ),
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/AddToCard"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/AddToCard"),
       },
       {
         path: "/login",
@@ -63,7 +63,7 @@ const Router = createBrowserRouter([
       {
         path: "/Ferrari",
         element: <Ferrari></Ferrari>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Ferrari"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/Ferrari"),
       },
       {
         path: "/FerrariCart/:id",
@@ -72,12 +72,12 @@ const Router = createBrowserRouter([
             <FerrariDetails></FerrariDetails>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/Lamborghini",
         element: <Lamborghini></Lamborghini>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Lamborghini"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/Lamborghini"),
       },
       {
         path: "/Lamborghini/:id",
@@ -86,12 +86,12 @@ const Router = createBrowserRouter([
             <LamborghiniCardDetails></LamborghiniCardDetails>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/Toyota",
         element: <Toyota></Toyota>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Toyota"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/Toyota"),
       },
       {
         path: "/Toyota/:id",
@@ -100,12 +100,12 @@ const Router = createBrowserRouter([
             <ToyotaCardDetails></ToyotaCardDetails>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/Mercedes",
         element: <Mercedes></Mercedes>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Mercedes"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/Mercedes"),
       },
       {
         path: "/Mercedes/:id",
@@ -114,12 +114,12 @@ const Router = createBrowserRouter([
             <MercedesCardDetails></MercedesCardDetails>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/Rolls_Royce",
         element: <Rolls_Royce></Rolls_Royce>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Rolls_Royce"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/Rolls_Royce"),
       },
       {
         path: "/Rolls_Royce/:id",
@@ -128,12 +128,12 @@ const Router = createBrowserRouter([
             <Rolls_RoyceCardDetails></Rolls_RoyceCardDetails>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/BMW",
         element: <Bmw></Bmw>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/BMW"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/BMW"),
       },
       {
         path: "/BMW/:id",
@@ -142,12 +142,12 @@ const Router = createBrowserRouter([
             <BMWCardDEtails></BMWCardDEtails>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/Bugatti",
         element: <Bugatti></Bugatti>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Bugatti"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/Bugatti"),
       },
       {
         path: "/Bugatti/:id",
@@ -156,12 +156,12 @@ const Router = createBrowserRouter([
             <BugattiCardDetail></BugattiCardDetail>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/Tesla",
         element: <Tesla></Tesla>,
-        loader: () => fetch(" https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Tesla"),
+        loader: () => fetch("https://carbazar-server-site.vercel.app/Tesla"),
       },
       {
         path: "/Tesla/:id",
@@ -170,55 +170,55 @@ const Router = createBrowserRouter([
             <TeslaCardDetail></TeslaCardDetail>
           </Private>
         ),
-        loader: ({ params }) => fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/${params.id}`),
+        loader: ({ params }) => fetch(`https://carbazar-server-site.vercel.app/${params.id}`),
       },
       {
         path: "/update1/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Ferrari/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/Ferrari/${params.id}`),
       },
       {
         path: "/update2/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Lamborghini/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/Lamborghini/${params.id}`),
       },
       {
         path: "/update3/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Toyota/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/Toyota/${params.id}`),
       },
       {
         path: "/update4/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Mercedes/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/Mercedes/${params.id}`),
       },
       {
         path: "/update5/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Rolls_Royce/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/Rolls_Royce/${params.id}`),
       },
       {
         path: "/update6/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/BMW/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/BMW/${params.id}`),
       },
       {
         path: "/update7/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Bugatti/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/Bugatti/${params.id}`),
       },
       {
         path: "/update8/:id",
         element: <Private><Update></Update></Private>,
         loader: ({ params }) =>
-          fetch(` https://carbazar2023-qb1z9ws4n-easin-arafats-projects.vercel.app/Tesla/${params.id}`),
+          fetch(`https://carbazar-server-site.vercel.app/Tesla/${params.id}`),
       },
     ],
   },
