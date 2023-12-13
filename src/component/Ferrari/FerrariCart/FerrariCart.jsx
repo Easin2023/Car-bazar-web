@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { FcShop } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../../Provider/Provider";
 
 const FerrariCart = ({ FerrariCart, HandleDelete }) => {
+  const { user } = useContext(AuthContext);
+
   const { _id, Image, ProductType, price, Rating, Short_description, name } =
     FerrariCart;
 
@@ -44,21 +48,27 @@ const FerrariCart = ({ FerrariCart, HandleDelete }) => {
           <p>{ProductType}</p>
           <p>{Short_description}</p>
           <div className="card-actions justify-end">
-            <button
-              onClick={() =>
-                handleAddToCard(Image, price, Short_description, name)
-              }
-              className="btn"
-            >
-              <FcShop className="text-3xl"></FcShop>
-            </button>
+            {user ? (
+              <button
+                onClick={() =>
+                  handleAddToCard(Image, price, Short_description, name)
+                }
+                className="btn"
+              >
+                <FcShop className="text-3xl"></FcShop>
+              </button>
+            ) : (
+              <Navigate to="/login"></Navigate>
+            )}
             <Link to={`/FerrariCart/${_id}`}>
               <button className="btn btn-primary">Details</button>
             </Link>
             <button onClick={() => HandleDelete(_id)} className="btn">
               Delete
             </button>
-            <Link to={`/update1/${_id}`}><button className="btn btn-secondary">Update</button></Link>
+            <Link to={`/update1/${_id}`}>
+              <button className="btn btn-secondary">Update</button>
+            </Link>
           </div>
         </div>
       </div>

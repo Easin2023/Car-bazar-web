@@ -48,6 +48,16 @@ const Header = () => {
           <h1 className="text-lg font-medium">My cart</h1>
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/help"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline" : " "
+          }
+        >
+          <h1 className="text-lg font-medium">Help</h1>
+        </NavLink>
+      </li>
     </>
   );
 

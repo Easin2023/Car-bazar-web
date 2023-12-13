@@ -24,6 +24,7 @@ import TeslaCardDetail from "../component/Tesla/TeslaCardDetail/TeslaCardDetail"
 import MyCard from "../page/MyCard/MyCard";
 import Update from "../page/Update/Update";
 import ErrorPage from "../page/ErrorPage/ErrorPage";
+import Help from "../component/Help/Help";
 
 const Router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const Router = createBrowserRouter([
           </Private>
         ),
         loader: () => fetch("https://carbazar-server-site.vercel.app/AddToCard"),
+      },
+      {
+        path: "/help",
+        element: <Help/>
       },
       {
         path: "/login",
