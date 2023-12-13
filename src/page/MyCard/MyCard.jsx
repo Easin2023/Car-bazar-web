@@ -35,7 +35,7 @@ const MyCard = () => {
       <h1 className="text-4xl font-semibold text-center my-24">
         Add Product card
       </h1>
-      <div className="grid grid-cols-3 gap-4 mb-20">
+      <div  className="grid grid-cols-3 gap-4 mb-20">
         {loaderData?.map((data) => (
           <Card
             key={data._id}

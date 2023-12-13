@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AddProduct = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const Brands = [
     { value: "", text: "Select brand Name" },
     { value: "Ferrari", text: "Ferrari" },
@@ -61,7 +69,7 @@ const AddProduct = () => {
   };
 
   return (
-    <section className="p-6 text-gray-100">
+    <section data-aos="fade-up" className="p-6 text-gray-100">
       <form
         onSubmit={HandleProductCreate}
         className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow bg-gray-900"

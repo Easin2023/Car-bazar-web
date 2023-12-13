@@ -1,6 +1,16 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+
 const ExtraSection2 = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <section className="bg-slate-200 text-black my-32">
+    <section data-aos="fade-right" className="bg-slate-200 text-black my-32">
       <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracki text-center sm:text-5xl">
